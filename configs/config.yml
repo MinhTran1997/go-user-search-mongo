@@ -1,0 +1,20 @@
+server:
+  name: search-users
+  port: 8080
+
+mongo:
+  uri: mongodb+srv://minhtran123:123456abc@cluster0.70uwp.mongodb.net/users?retryWrites=true&w=majority
+  database: users
+
+log:
+  level: info
+  map:
+    time: "@timestamp"
+    msg: message
+
+middleware:
+  log: true
+  skips: /health
+  request: request
+  response: response
+  size: size

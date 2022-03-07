@@ -1,0 +1,9 @@
+request (POST):
+http://localhost:8080/users/search
+
+request body:
+{
+    "username": "a",
+    "pageSize": 5,
+    "pageIndex": 1
+}
